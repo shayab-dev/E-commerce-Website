@@ -206,13 +206,143 @@ header{
   font-size: 35px;
   cursor: pointer;
 }
-@media screen and (max-width: 360px){
-  .product-content{
-    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+
+/* =========================
+   Responsive Media Queries
+   ========================= */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  header {
+    width: calc(100% - 20px);
+    left: 10px;
+    top: 10px;
+    padding: 14px 6%;
   }
-  .cart{
-    width: 360px;
+
+  .logo {
+    font-size: 2.4rem;
+  }
+
+  #cart-icon {
+    font-size: 2.6rem;
+  }
+
+  .shop {
+    padding: 100px 6% 30px;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .product-content {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+
+  .cart {
+    width: 320px;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  header {
+    width: calc(100% - 16px);
+    left: 8px;
+    top: 8px;
+    padding: 12px 16px;
+    border-radius: 40px;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  #cart-icon {
+    font-size: 2.4rem;
+  }
+
+  #cart-icon .cart-item-count {
+    width: 18px;
+    height: 18px;
+    font-size: 1rem;
+    right: -5px;
+  }
+
+  .shop {
+    padding: 90px 16px 24px;
+  }
+
+  .section-title {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+  }
+
+  .product-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .product-box .product-title {
+    font-size: 2rem;
+  }
+
+  .price-and-cart .price {
+    font-size: 1.8rem;
+  }
+
+  .price-and-cart .add-cart {
+    padding: 8px;
+    font-size: 1.8rem;
+  }
+
+  .cart {
+    width: 100%;
     max-width: 100%;
+    padding: 60px 16px 30px;
+  }
+
+  .cart-title {
+    font-size: 2.6rem;
+  }
+
+  .cart-box img {
+    width: 80px;
+    height: 80px;
+    margin-right: 12px;
+  }
+
+  .cart-product-title {
+    font-size: 1.4rem;
+  }
+
+  .cart-quantity {
+    width: 90px;
+  }
+
+  .btn-buy {
+    width: 100%;
+  }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 360px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+  }
+
+  .product-box .product-title {
+    font-size: 1.8rem;
+  }
+
+  .price-and-cart .price {
+    font-size: 1.6rem;
   }
 }
   
