@@ -84,7 +84,7 @@ For development, you can also use **VS Code Live Server** to run the website loc
 
 The project is deployed using Vercel and is available online:
 
-https://e-commerce-website-xi-flame.vercel.app/
+https://e-commerce-website-sr.vercel.app/
 
 ## 🎯 Learning Outcomes
 
